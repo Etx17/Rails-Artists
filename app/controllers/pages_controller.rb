@@ -1,3 +1,5 @@
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @artists = Artist.all.order(:name)
+  end
 end
