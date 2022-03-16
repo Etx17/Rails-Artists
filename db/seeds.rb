@@ -9,7 +9,7 @@ require 'faker'
 20.times do
   artist = Artist.create(name: Faker::Name.name)
   3.times do
-    album = Album.new(title: Faker::Music.album, year: rand(1900, 2022))
+    album = Album.new(title: Faker::Music.album, year: rand(2022))
     album.artist = artist
     album.save
   end
